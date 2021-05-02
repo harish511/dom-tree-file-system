@@ -1,0 +1,25 @@
+.file-view {
+  padding: 7.5px 7.5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  &:hover {
+    background-color: #4285f4;
+    color: #ffffff;
+  }
+  .file-img {
+    background: url('../../assets/icon-sprite.png') no-repeat -29px 0;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+  }
+  .file-view-label {
+    margin-left: 10px;
+    flex: 1;
+    margin-left: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 170px;
+    white-space: nowrap;
+  }
+}

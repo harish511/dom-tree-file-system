@@ -1,0 +1,74 @@
+
+.folder-view{
+    align-items: center;
+    color:#989898;
+
+    ul{
+		list-style-type:none;
+			&.hide-children{
+				display:none
+			}
+
+			&.display-children{
+				display:block
+			}
+		}
+
+	& > div{
+		display: flex;
+	    align-items: center;
+		padding:8px 10px;
+		cursor:pointer;
+
+		 &:hover{
+			background-color: #4285f4;
+			color:#ffffff;
+		}
+	}
+
+
+	.folder-img{
+		background: url('../../assets/icon-sprite.png') no-repeat 0 0;
+		width: 14px;
+		height: 14px;
+		display:inline-block;
+		margin-left: 10px;
+		
+	}
+
+	.folder-img.private{
+		background: url('../../assets/icon-sprite.png') no-repeat 0 -14;
+		width: 14px;
+	    height: 14px;
+	    display: inline-block;
+	    background-position: -14px 0;
+	 
+	}
+
+	.collapsed{
+		background: url('../../assets/icon-sprite.png') no-repeat -58px -2px;
+		width: 9px;
+		height: 9px;
+		display:inline-block;
+		cursor:pointer;
+		opacity:0.5;
+	}
+
+	.expanded{
+		background: url('../../assets/icon-sprite.png') no-repeat -72px -2px;
+		width: 9px;
+		height: 9px;
+		display:inline-block;
+		cursor:pointer;
+		opacity:0.5;
+	}
+
+
+	.folder-label{
+		margin-left:10px;
+	}
+
+
+}
+
+
